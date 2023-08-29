@@ -36,7 +36,7 @@ private const val TAG = "MainActivity"
 const val DOWNLOAD_TAG = "download_tag"
 
 /**
- * version:1.0.0
+ * version:1.0.1
  */
 class MainActivity : AppCompatActivity() {
 

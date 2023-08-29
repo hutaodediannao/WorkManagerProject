@@ -35,6 +35,9 @@ import kotlin.math.log
 private const val TAG = "MainActivity"
 const val DOWNLOAD_TAG = "download_tag"
 
+/**
+ * version:1.0.0
+ */
 class MainActivity : AppCompatActivity() {
 
     private val mWorkManager by lazy { WorkManager.getInstance(this) }
@@ -44,7 +47,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_layout)
-
         mStartBtn.setOnClickListener { start() }
         mStopBtn.setOnClickListener {
             mWorkManager.getWorkInfosByTag(DOWNLOAD_TAG).cancel(true)
